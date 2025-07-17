@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NodoStack – Desarrollo Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>NodoStack</h1>
+      <p class="slogan">Conectamos ideas. Desplegamos soluciones.</p>
+      <a href="#sobre" class="btn-cta">Conocé más</a>
+      <button id="idioma-toggle" class="modo-btn">🇬🇧 English</button>
+    </div>
+  </header>
+
+  <!-- Sobre NodoStack -->
+  <section id="sobre" class="sobre">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos un equipo de desarrolladoras apasionadas por la tecnología, la colaboración y el código limpio. En NodoStack creamos soluciones digitales que conectan personas y potencian ideas.</p>
+  </section>
+
+  <!-- Servicios / Stack -->
+  <section id="stack" class="stack">
+    <h2>Nuestro Stack</h2>
+    <div class="tech-grid">
+      <div class="tech-card">Angular</div>
+      <div class="tech-card">Django</div>
+      <div class="tech-card">Node.js</div>
+      <div class="tech-card">React</div>
+      <div class="tech-card">PostgreSQL</div>
+      <div class="tech-card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section id="equipo" class="equipo">
+    <h2>El equipo</h2>
+    <div class="equipo-grid">
+      <div class="miembro">
+        <img src="img/mariana.jpg" alt="Mariana Cos" />
+        <h3>Mariana Cos</h3>
+        <p>Fullstack Developer</p>
+      </div>
+      <!-- Agregá más miembros acá -->
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/xgvzwjgb" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="_replyto" placeholder="Tu correo" required />
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>NodoStack © 2025 – Donde el código conecta</p>
+  </footer>
+ <script src="main.js"></script>
+</body>
+</html>
