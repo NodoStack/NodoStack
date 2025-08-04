@@ -16,7 +16,8 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-
+  
+  
 </head>
 <body> 
 
@@ -35,6 +36,9 @@
           <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
           <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>  
+          <li class="nav-item">
+                <button id="idioma-btn" class="btn btn-outline-light ms-3">🇬🇧 English</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -45,7 +49,8 @@
   <div class="container">
     <div class="hero-content">
       <h1 class="display-3 fw-bold text-acento">NodoStack</h1>
-      <p class="lead fs-4">Donde la tecnología se convierte en soluciones reales.</p>
+      <p class="slogan lead fs-4">Donde la tecnología se convierte en soluciones reales.</p>
+      
     </div>
   </div>
 </header>
@@ -53,12 +58,12 @@
 
 
   <!-- ✅ CTA Fijo Flotante -->
-  <a href="#contacto" class="btn btn-success position-fixed bottom-0 end-0 m-4 shadow rounded-pill px-4 py-2 z-3">
+  <a href="#contacto" class="btn btn-success position-fixed bottom-0 end-0 m-4 shadow rounded-pill px-4 py-2 z-3" id="consulta-btn">
     📩 Consultá gratis
   </a>
 
   <!-- ✅ SOBRE NOSOTRAS -->
-<section id="sobre" class="py-5">
+<section id="sobre-nosotras" class="py-5">
   <div class="container text-center">
     <h2 class="display-5 text-acento mb-4">Sobre Nosotras</h2>
     <p class="lead mx-auto" style="max-width: 700px;">
@@ -103,7 +108,7 @@
 
   <!-- ✅ SERVICIOS -->
 <!-- Sección: Nuestros Servicios -->
-<section id="servicios" class="py-5 bg-white text-dark">
+<section id="stack" class="py-5 bg-white text-dark">
   <div class="container">
     <h2 class="text-center mb-5 fw-bold">Nuestros Servicios</h2>
     <div class="row text-center">
@@ -153,7 +158,7 @@
 </section>
 
   <!-- ✅ PROYECTOS -->
-<section id="proyectos" class="py-5 bg-dark text-light">
+<section id="soluciones" class="py-5 bg-dark text-light">
   <div class="container">
     <h2 class="display-5 text-warning text-center">Soluciones reales, resultados concretos</h2>
     <p class="lead text-center mb-5">Creamos herramientas digitales simples, que resuelven problemas reales de tu negocio.</p>
@@ -195,7 +200,7 @@
 </section>
 
   <!-- ✅ EQUIPO -->
-<section id="team" class="py-5 bg-dark text-light">
+<section id="equipo" class="py-5 bg-dark text-light">
   <div class="container text-center mb-5">
     <h2 class="display-5 text-warning">Nuestro equipo</h2>
   </div>
@@ -203,7 +208,7 @@
     <div class="row justify-content-center">
 <!-- Micaela Juarez -->
       <div class="col-xl-3 col-md-4 col-sm-6 mb-5 px-3">
-        <div class="card card-dev-custom h-100 text-center p-4">
+        <div class="card card-dev-custom h-100 text-center p-4 miembro">
           <img src="../img/micaela.png" alt="Micaela Juarez" class="card-img-top rounded-circle mx-auto border border-warning shadow-sm" width="100" />
           <div class="card-body">
             <h3 class="card-title text-warning">Micaela Juarez</h3>
@@ -302,5 +307,10 @@
 
   <!-- Bootstrap Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS -->
+   <script src="translate.js"></script>
+  <script src="main.js" ></script>
+  
 </body>
 </html>
