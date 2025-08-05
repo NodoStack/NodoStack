@@ -2,8 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NodoStack – Desarrollo Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="img/logoNS.png" type="image/png">
+  <title>NodoStack</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
@@ -16,41 +17,41 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  
-  
+
 </head>
 <body> 
 
   <!-- ✅ NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">NodoStack</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-uniforme fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">NodoStack</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nosotras</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>  
-          <li class="nav-item">
-                <button id="idioma-btn" class="btn btn-outline-light ms-3">🇬🇧 English</button>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nosotras</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>  
+        <!-- 🔀 Botón de idioma ubicado en el navbar -->
+        <li class="nav-item d-flex align-items-center ms-3">
+          <button id="idioma-toggle" class="btn btn-sm btn-outline-light">🇬🇧 English</button>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- ✅ HERO -->
-<header class="hero text-light text-center">
-  <div class="container">
-    <div class="hero-content">
-      <h1 class="display-3 fw-bold text-acento">NodoStack</h1>
-      <p class="slogan lead fs-4">Donde la tecnología se convierte en soluciones reales.</p>
-      
+<header class="hero">
+  <div class="hero-content">
+    <img src="./img/logo sin fondo.png" alt="NodoStack Logo" class="hero-logo" />
+    <div class="hero-text">
+      <h1>Donde la tecnología se convierte en soluciones reales.</h1>
+      <!-- <button id="idioma-toggle" class="btn-menta">🇬🇧 English</button> -->
     </div>
   </div>
 </header>
@@ -58,12 +59,12 @@
 
 
   <!-- ✅ CTA Fijo Flotante -->
-  <a href="#contacto" class="btn btn-success position-fixed bottom-0 end-0 m-4 shadow rounded-pill px-4 py-2 z-3" id="consulta-btn">
+  <a href="#contacto" class="btn btn-success position-fixed bottom-0 end-0 m-4 shadow rounded-pill px-4 py-2 z-3">
     📩 Consultá gratis
   </a>
 
   <!-- ✅ SOBRE NOSOTRAS -->
-<section id="sobre-nosotras" class="py-5">
+<section id="sobre" class="py-5">
   <div class="container text-center">
     <h2 class="display-5 text-acento mb-4">Sobre Nosotras</h2>
     <p class="lead mx-auto" style="max-width: 700px;">
@@ -77,38 +78,40 @@
 </section>
 
   <!-- ✅ QUÉ RESOLVEMOS -->
-<section class="py-5 bg-accento text-light">
+<section class="py-5 bg-accento fondo-negro text-light">
   <div class="container">
     <h2 class="text-center mb-4">¿Qué resolvemos?</h2>
     <div class="row text-center">
-      <div class="col-md-3 mb-4">
+      <div class="card card-dev-custom h-100 text-center col-md-3 mb-4">
         <i class="fa-solid fa-handshake-angle fa-2x mb-2"></i>
         <h5>Necesidad de acompañamiento técnico</h5>
         <p>Ya sea con entregas puntuales o soporte continuo, trabajamos como tu equipo tecnológico aliado.</p>
       </div>
-      <div class="col-md-3 mb-4">
+      <div class="card card-dev-custom h-100 text-center col-md-3 mb-4">
         <i class="fa-solid fa-plug fa-2x mb-2"></i>
         <h5>Desconexión tecnológica</h5>
         <p>Te ayudamos a incorporar herramientas digitales que potencien tu negocio, sin complicaciones.</p>
       </div>
-      <div class="col-md-3 mb-4">
+      <div class="card card-dev-custom h-100 text-center col-md-3 mb-4">
         <i class="fa-solid fa-gears fa-2x mb-2"></i>
         <h5>Procesos que necesitan optimización</h5>
         <p>Automatizamos tareas y digitalizamos flujos para que tu tiempo rinda más.</p>
       </div>
-      <div class="col-md-3 mb-4">
+      <div class="card card-dev-custom h-100 text-center col-md-3 mb-4">
         <i class="fa-solid fa-cube fa-2x mb-2"></i>
         <h5>Soluciones a medida</h5>
+        <br>
         <p>Desarrollamos plataformas adaptadas 100% a tus necesidades.</p>
-         <p class="text-center mt-4 fst-italic">Cada proyecto es único. Lo resolvemos como tal.</p>
+        <br> 
       </div>
     </div>
+    <p class="text-center mt-4 fst-italic">Cada proyecto es único. Lo resolvemos como tal.</p>
   </div>
 </section>
 
   <!-- ✅ SERVICIOS -->
 <!-- Sección: Nuestros Servicios -->
-<section id="stack" class="py-5 bg-white text-dark">
+<section id="servicios" class="py-5 bg-uniforme text-white">
   <div class="container">
     <h2 class="text-center mb-5 fw-bold">Nuestros Servicios</h2>
     <div class="row text-center">
@@ -119,7 +122,7 @@
             <i class="fas fa-laptop-code"></i>
           </div>
           <h5 class="fw-semibold">Desarrollo Web & Mobile</h5>
-          <p class="text-muted">Construimos sitios y aplicaciones modernas, adaptadas a tus objetivos y preparadas para escalar.</p>
+          <p class="text-white">Construimos sitios y aplicaciones modernas, adaptadas a tus objetivos y preparadas para escalar.</p>
         </div>
       </div>
 
@@ -129,7 +132,7 @@
             <i class="fas fa-object-group"></i>
           </div>
           <h5 class="fw-semibold">Diseño UX/UI</h5>
-          <p class="text-muted">Creamos experiencias visuales claras, intuitivas y centradas en las personas que las usan.</p>
+          <p class="text-white">Creamos experiencias visuales claras, intuitivas y centradas en las personas que las usan.</p>
         </div>
       </div>
 
@@ -139,7 +142,7 @@
             <i class="fas fa-handshake"></i>
           </div>
           <h5 class="fw-semibold">Consultoría técnica & acompañamiento</h5>
-          <p class="text-muted">Te asesoramos desde el inicio hasta el lanzamiento, con la opción de seguir acompañándote con mantenimiento y soporte.</p>
+          <p class="text-white">Te asesoramos desde el inicio hasta el lanzamiento, con la opción de seguir acompañándote con mantenimiento y soporte.</p>
         </div>
       </div>
 
@@ -149,7 +152,7 @@
             <i class="fas fa-shield-alt"></i>
           </div>
           <h5 class="fw-semibold">Testing y control de calidad</h5>
-          <p class="text-muted">Probamos cada parte del producto para asegurar estabilidad, funcionalidad y buena experiencia de uso.</p>
+          <p class="text-white">Probamos cada parte del producto para asegurar estabilidad, funcionalidad y buena experiencia de uso.</p>
         </div>
       </div>
 
@@ -158,7 +161,7 @@
 </section>
 
   <!-- ✅ PROYECTOS -->
-<section id="soluciones" class="py-5 bg-dark text-light">
+<section id="proyectos" class="py-5 bg-uniforme text-white">
   <div class="container">
     <h2 class="display-5 text-warning text-center">Soluciones reales, resultados concretos</h2>
     <p class="lead text-center mb-5">Creamos herramientas digitales simples, que resuelven problemas reales de tu negocio.</p>
@@ -166,7 +169,7 @@
     <div class="row g-4">
 
       <div class="col-md-6">
-        <div class="card bg-secondary text-light border-0 shadow-lg h-100">
+        <div class="card bg-uniforme text-light border-0 shadow-lg h-100">
           <div class="card-body p-4">
             <h4 class="text-success mb-3">¿Querés vender online?</h4>
             <p>Desarrollamos una app (web + móvil) donde los clientes compran fácilmente y vos controlás todo desde tu panel.</p>
@@ -181,7 +184,7 @@
       </div>
 
       <div class="col-md-6">
-        <div class="card bg-secondary text-light border-0 shadow-lg h-100">
+        <div class="card bg-uniforme text-light border-0 shadow-lg h-100">
           <div class="card-body p-4">
             <h4 class="text-success mb-3">¿Recibís muchas consultas repetidas?</h4>
             <p>Implementamos un chatbot que responde automáticamente preguntas frecuentes de tus clientes o tu equipo.</p>
@@ -200,15 +203,15 @@
 </section>
 
   <!-- ✅ EQUIPO -->
-<section id="equipo" class="py-5 bg-dark text-light">
-  <div class="container text-center mb-5">
+<section id="team" class="py-5 fondo-negro  text-light" >
+  <div class="container text-center mb-5" id="equipo">
     <h2 class="display-5 text-warning">Nuestro equipo</h2>
   </div>
   <div class="container">
     <div class="row justify-content-center">
 <!-- Micaela Juarez -->
       <div class="col-xl-3 col-md-4 col-sm-6 mb-5 px-3">
-        <div class="card card-dev-custom h-100 text-center p-4 miembro">
+        <div class="card card-dev-custom h-100 text-center p-4">
           <img src="../img/micaela.png" alt="Micaela Juarez" class="card-img-top rounded-circle mx-auto border border-warning shadow-sm" width="100" />
           <div class="card-body">
             <h3 class="card-title text-warning">Micaela Juarez</h3>
@@ -307,10 +310,6 @@
 
   <!-- Bootstrap Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- JS -->
-   <script src="translate.js"></script>
-  <script src="main.js" ></script>
-  
+  <script src="main.js"></script>
 </body>
 </html>
