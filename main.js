@@ -8,7 +8,7 @@ idiomaToggle.addEventListener('click', () => {
     document.querySelector('a.nav-link[href="#sobre"]').textContent = 'About us';
     document.querySelector('a.nav-link[href="#servicios"]').textContent = 'Services';
     document.querySelector('a.nav-link[href="#proyectos"]').textContent = 'Projects';
-    document.querySelector('a.nav-link[href="#equipo"]').textContent = 'Team';
+    document.querySelector('a.nav-link[href="#team"]').textContent = 'Team';
     document.querySelector('a.nav-link[href="#contacto"]').textContent = 'Contact';
 
     // ✅ HERO
