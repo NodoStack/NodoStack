@@ -1,3 +1,12 @@
+:root {
+  --negro: #000000;
+  --verde-menta: #4EF4AD;
+  --verde-profundo: #00A679;
+  --gris-oscuro: #080809;
+  --gris-medio: #3E404D;
+  --blanco-suave: #F4F4F4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,20 +19,12 @@ html {
 
 body {
   font-family: 'Outfit', sans-serif;
-  background: linear-gradient(to bottom, #2c2c2c, #1d1f21); 
+  background: linear-gradient(to bottom, #2c2c2c, #1d1f21);
   color: var(--blanco-suave);
   line-height: 1.6;
 }
 
-:root {
-  --verde-menta: #4EF4AD;
-  --verde-profundo: #00A679;
-  --gris-oscuro: #2A2C38;
-  --gris-medio: #3E404D;
-  --blanco-suave: #F4F4F4;
-}
-
-/* --- NAVBAR---- */
+/* --- NAVBAR ---- */
 .navbar {
   background-color: var(--gris-oscuro);
 }
@@ -42,66 +43,54 @@ body {
   color: var(--verde-menta);
 }
 
-/* ---- HERO SECTION----- */
+/* --- HERO SECTION --- */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: radial-gradient(ellipse at center, var(--gris-medio) 0%, var(--gris-oscuro) 100%);
-  position: relative;
-  overflow: hidden;
-  min-height: 70vh;
-  padding: 60px 20px;
-}
-.hero::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(0, 255, 200, 0.05) 0%, transparent 70%);
-  animation: floatBackground 20s linear infinite;
-  z-index: 1;
+  background-color: #0d0d0d;
+  color: white;
+  padding: 4rem 2rem;
 }
 
 .hero-content {
-  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* para que en mobile se apilen */
+  gap: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
-  z-index: 2;
-  position: relative;
-  animation: fadeInUp 1s ease forwards;
 }
 
-
-
-.hero h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 3.5rem;
-  color: var(--verde-menta);
-  animation: fadeInUp 1s ease forwards;
+.hero-logo {
+  max-width: 450px;
+  width: 150%;
+  height: auto;
 }
 
-.hero .lead {
-  font-size: 1.2rem;
-  color: var(--blanco-suave);
-  animation: fadeInUp 1.3s ease forwards;
+.hero-text {
+  max-width: 500px;
 }
 
-.btn-outline-light {
-  border: 2px solid var(--verde-menta);
-  color: var(--verde-menta);
-  transition: all 0.3s ease;
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.btn-outline-light:hover {
-  background-color: var(--verde-menta);
-  color: var(--gris-oscuro);
+.btn-menta {
+  padding: 12px 24px;
+  background-color: #7FFFD4; /* verde menta */
+  color: #121212; /* texto oscuro */
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-menta:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(127, 255, 212, 0.3);
 }
-
-/* ----- BOTÓN FLOTANTE------- */
+/* --- BOTÓN FLOTANTE --- */
 a.btn.position-fixed {
   background-color: var(--verde-profundo);
   color: #fff;
@@ -109,27 +98,32 @@ a.btn.position-fixed {
   animation: pulse-glow 2s infinite;
   z-index: 999;
 }
+
 a.btn.position-fixed:hover {
   background-color: var(--verde-menta);
   color: #121212;
 }
 
-/* -----SOBRE NOSOTRAS------- */
+/* --- SOBRE NOSOTRAS --- */
 #sobre {
-  /* background-color: var(--gris-medio); */
+  background-color: #000; /* negro */
   color: var(--blanco-suave);
   border-top: 3px solid var(--verde-menta);
 }
 
-/* ---- ¿QUÉ RESOLVEMOS?------- */
 
-#servicios h5, #proyectos h5 {
+/* --- ¿QUÉ RESOLVEMOS? + PROYECTOS --- */
+/* Fondo negro para la sección */
+.fondo-negro {
+  background-color: var(--negro);
+}
+#servicios h5,
+#proyectos h5 {
   color: var(--verde-menta);
   font-weight: bold;
 }
 
-/* ----- SERVICIOS------- */
-
+/* --- SERVICIOS --- */
 #servicios .col-md-3 {
   transition: transform 0.3s ease;
 }
@@ -137,10 +131,13 @@ a.btn.position-fixed:hover {
 #servicios .col-md-3:hover {
   transform: translateY(-5px);
 }
+#servicios .text-muted {
+  color: white !important;
+}
 
-/* ----- PROYECTOS DESTACADOS------- */
+/* --- PROYECTOS DESTACADOS --- */
 .card {
-  border: 1px solid var(--verde-menta);
+  border: 1px solid var(--gris-oscuro);
   color: var(--blanco-suave);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -150,13 +147,15 @@ a.btn.position-fixed:hover {
   box-shadow: 0 4px 12px rgba(78, 244, 173, 0.2);
 }
 
-/* ---- EQUIPO------------- */
+
+
+/* --- EQUIPO --- */
 .card-dev-custom {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(43, 41, 41, 0.05);
   border: 1px solid var(--verde-menta);
   border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: var(--blanco-suave);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-dev-custom:hover {
@@ -172,16 +171,15 @@ a.btn.position-fixed:hover {
   border: 2px solid var(--verde-menta);
 }
 
-/* ---- CONTACTO----------- */
+/* --- CONTACTO --- */
 form {
-  /* background-color: var(--gris-medio); */
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 166, 121, 0.2);
 }
 
-input, textarea {
-  /* background-color: #1e1e1e; */
+input,
+textarea {
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -191,12 +189,13 @@ input, textarea {
   transition: box-shadow 0.3s ease;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(78, 244, 173, 0.5);
 }
 
-/* ---FOOTER------------- */
+/* --- FOOTER --- */
 .footer {
   background-color: #1e1e1e;
   color: var(--blanco-suave);
@@ -204,14 +203,29 @@ input:focus, textarea:focus {
   font-size: 0.9rem;
 }
 
-/* -----ANIMACIONES------------- */
+/* --- ANIMACIONES --- */
 @keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes pulse-glow {
-  0% { box-shadow: 0 0 0 0 rgba(0, 166, 121, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(0, 166, 121, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(0, 166, 121, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 166, 121, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 166, 121, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 166, 121, 0);
+  }
+}
+.bg-uniforme {
+  background-color: var(--gris-oscuro) !important;
 }
