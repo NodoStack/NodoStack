@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" href="img/logoNS.png" type="image/png">
-  <title>NodoStack</title>
+  <title>NodoStack - Desarrollo Web, Apps y Soluciones Digitales</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
@@ -38,7 +38,9 @@
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>  
         <!-- 🔀 Botón de idioma ubicado en el navbar -->
         <li class="nav-item d-flex align-items-center ms-3">
-          <button id="idioma-toggle" class="btn btn-sm btn-outline-light">🇬🇧 English</button>
+          <button id="idioma-toggle" class="btn btn-sm btn-outline-light" title="Cambiar idioma">
+            <i class="fas fa-globe"></i>
+          </button>
         </li>
       </ul>
     </div>
@@ -55,54 +57,66 @@
     </div>
   </div>
 </header>
-
-
-
   <!-- ✅ CTA Fijo Flotante -->
   <a href="#contacto" class="btn btn-success position-fixed bottom-0 end-0 m-4 shadow rounded-pill px-4 py-2 z-3">
     📩 Consultá gratis
   </a>
-
-  <!-- ✅ SOBRE NOSOTRAS -->
+<!-- ✅ SOBRE NOSOTRAS -->
 <section id="sobre" class="py-5">
   <div class="container text-center">
     <h2 class="display-5 text-acento mb-4">Sobre Nosotras</h2>
     <p class="lead mx-auto" style="max-width: 700px;">
-      Somos un equipo de desarrolladoras apasionadas por transformar ideas en soluciones reales. NodoStack nació con una visión clara: usar la tecnología para acompañar, crear y generar impacto positivo.  
-      <br><br>
-      Nos une la creatividad, la colaboración y el deseo de construir experiencias digitales significativas. Cada proyecto es una oportunidad para conectar con personas, resolver desafíos y dejar huella.
-      <br><br>
-      <strong class="text-acento">No solo programamos, construimos historias digitales. ¿Listas para crear la tuya?</strong>
+      En <strong>NodoStack</strong> somos un equipo de desarrolladoras apasionadas por transformar ideas en soluciones reales.
+      Nacimos con una visión clara: usar la tecnología para <strong>acompañar, crear y generar impacto positivo</strong> en cada etapa de tu proyecto.
     </p>
+    <ul class="list-unstyled mx-auto" style="max-width: 700px;">
+      <li> Creatividad y colaboración en cada entrega</li>
+      <li> Soluciones a medida para cada desafío</li>
+      <li> Experiencias digitales que dejan huella</li>
+    </ul>
+    <p class="fw-bold text-acento">No solo programamos, construimos historias digitales. ¿Listas para crear la tuya?</p>
   </div>
 </section>
-
   <!-- ✅ QUÉ RESOLVEMOS -->
 <section class="py-5 bg-accento fondo-negro text-light">
   <div class="container">
     <h2 class="text-center mb-4">¿Qué resolvemos?</h2>
-    <div class="row text-center">
-      <div class="card card-dev-custom h-100 text-center col-md-3 mb-4">
-        <i class="fa-solid fa-handshake-angle fa-2x mb-2"></i>
-        <h5>Necesidad de acompañamiento técnico</h5>
-        <p>Ya sea con entregas puntuales o soporte continuo, trabajamos como tu equipo tecnológico aliado.</p>
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between">
+          <div>
+            <i class="fa-solid fa-handshake-angle fa-2x mb-3"></i>
+            <h5>Necesidad de acompañamiento técnico</h5>
+          </div>
+          <p>Ya sea con entregas puntuales o soporte continuo, trabajamos como tu equipo tecnológico aliado.</p>
+        </div>
       </div>
-      <div class="card card-dev-custom h-100 text-center col-md-3 mb-4">
-        <i class="fa-solid fa-plug fa-2x mb-2"></i>
-        <h5>Desconexión tecnológica</h5>
-        <p>Te ayudamos a incorporar herramientas digitales que potencien tu negocio, sin complicaciones.</p>
+      <div class="col-md-3">
+        <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between">
+          <div>
+            <i class="fa-solid fa-plug fa-2x mb-3"></i>
+            <h5>Desconexión tecnológica</h5>
+          </div>
+          <p>Te ayudamos a incorporar herramientas digitales que potencien tu negocio, sin complicaciones.</p>
+        </div>
       </div>
-      <div class="card card-dev-custom h-100 text-center col-md-3 mb-4">
-        <i class="fa-solid fa-gears fa-2x mb-2"></i>
-        <h5>Procesos que necesitan optimización</h5>
-        <p>Automatizamos tareas y digitalizamos flujos para que tu tiempo rinda más.</p>
+      <div class="col-md-3">
+        <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between">
+          <div>
+            <i class="fa-solid fa-gears fa-2x mb-3"></i>
+            <h5>Procesos que necesitan optimización</h5>
+          </div>
+          <p>Automatizamos tareas y digitalizamos flujos para que tu tiempo rinda más.</p>
+        </div>
       </div>
-      <div class="card card-dev-custom h-100 text-center col-md-3 mb-4">
-        <i class="fa-solid fa-cube fa-2x mb-2"></i>
-        <h5>Soluciones a medida</h5>
-        <br>
-        <p>Desarrollamos plataformas adaptadas 100% a tus necesidades.</p>
-        <br> 
+      <div class="col-md-3">
+        <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between">
+          <div>
+            <i class="fa-solid fa-cube fa-2x mb-3"></i>
+            <h5>Soluciones a medida</h5>
+          </div>
+          <p>Desarrollamos plataformas adaptadas 100% a tus necesidades.</p>
+        </div>
       </div>
     </div>
     <p class="text-center mt-4 fst-italic">Cada proyecto es único. Lo resolvemos como tal.</p>
@@ -110,7 +124,6 @@
 </section>
 
   <!-- ✅ SERVICIOS -->
-<!-- Sección: Nuestros Servicios -->
 <section id="servicios" class="py-5 bg-uniforme text-white">
   <div class="container">
     <h2 class="text-center mb-5 fw-bold">Nuestros Servicios</h2>
@@ -160,10 +173,9 @@
   </div>
 </section>
 
-  <!-- ✅ PROYECTOS -->
 <section id="proyectos" class="py-5 bg-uniforme text-white">
   <div class="container">
-    <h2 class="display-5 text-warning text-center">Soluciones reales, resultados concretos</h2>
+    <h2 class="display-5 text-menta text-center">Soluciones reales, resultados concretos</h2>
     <p class="lead text-center mb-5">Creamos herramientas digitales simples, que resuelven problemas reales de tu negocio.</p>
 
     <div class="row g-4">
@@ -205,16 +217,16 @@
   <!-- ✅ EQUIPO -->
 <section id="team" class="py-5 fondo-negro  text-light" >
   <div class="container text-center mb-5" >
-    <h2 class="display-5 text-warning">Nuestro equipo</h2>
+    <h2 class="display-5 text-menta">Nuestro equipo</h2>
   </div>
   <div class="container">
     <div class="row justify-content-center">
 <!-- Micaela Juarez -->
       <div class="col-xl-3 col-md-4 col-sm-6 mb-5 px-3">
         <div class="card card-dev-custom h-100 text-center p-4">
-          <img src="../img/micaela.png" alt="Micaela Juarez" class="card-img-top rounded-circle mx-auto border border-warning shadow-sm" width="100" />
+          <img src="../img/micaela.png" alt="Micaela Juarez" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="100" />
           <div class="card-body">
-            <h3 class="card-title text-warning">Micaela Juarez</h3>
+            <h3 class="card-title text-menta">Micaela Juarez</h3>
             <p class="card-text">Developer Team</p>
             <div class="d-flex justify-content-center gap-2 mt-3">
               <a href="https://www.linkedin.com" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Micaela Juarez">
@@ -230,9 +242,9 @@
       <!-- Mariana Cos -->
       <div class="col-xl-3 col-md-4 col-sm-6 mb-5 px-3">
         <div class="card card-dev-custom h-100 text-center p-4">
-          <img src="../img/mariana.png" alt="Mariana Cos" class="card-img-top rounded-circle mx-auto border border-warning shadow-sm" width="100" />
+          <img src="../img/mariana.png" alt="Mariana Cos" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="100" />
           <div class="card-body">
-            <h3 class="card-title text-warning">Mariana Cos</h3>
+            <h3 class="card-title text-menta">Mariana Cos</h3>
             <p class="card-text">Developer Team</p>
             <div class="d-flex justify-content-center gap-2 mt-3">
               <a href="https://www.linkedin.com" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Mariana Cos">
@@ -248,9 +260,9 @@
       <!-- Carla Arévalo -->
       <div class="col-xl-3 col-md-4 col-sm-6 mb-5 px-3">
         <div class="card card-dev-custom h-100 text-center p-4">
-          <img src="../img/carla.png" alt="Carla Arévalo" class="card-img-top rounded-circle mx-auto border border-warning shadow-sm" width="100" />
+          <img src="../img/carla.png" alt="Carla Arévalo" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="100" />
           <div class="card-body">
-            <h3 class="card-title text-warning">Carla Arévalo</h3>
+            <h3 class="card-title text-menta">Carla Arévalo</h3>
             <p class="card-text">Developer Team</p>
             <div class="d-flex justify-content-center gap-2 mt-3">
               <a href="https://www.linkedin.com" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Carla Arévalo">
@@ -271,7 +283,7 @@
   <!-- ✅ CONTACTO -->
   <section id="contacto" class="py-5 bg-accento text-light">
   <div class="container">
-    <h2 class="text-center mb-4 display-6 text-warning">Contacto</h2>
+    <h2 class="text-center mb-4 display-6 text-menta">Contacto</h2>
     <p class="text-center mb-4">¿Tenés una idea, un proyecto o una consulta? Escribinos, te respondemos en menos de 24 hs.</p>
     <form action="https://formspree.io/f/xgvzwjgb" method="POST" class="mx-auto bg-dark p-4 rounded shadow contact-form" style="max-width: 600px;">
       <div class="mb-3">
@@ -290,7 +302,7 @@
       </div>
 
       <div class="text-center mt-4">
-        <button type="submit" class="btn btn-warning px-4">Enviar mensaje</button>
+        <button type="submit" class="btn btn-menta px-4">Enviar mensaje</button>
       </div>
     </form>
 
