@@ -1,0 +1,30 @@
+<!--Ayuda a los buscadores a encontrar todas las secciones del sitio. Google puede tardar semanas si no se le da un sitemap-->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.nodostack.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nodostack.com/#sobre</loc>
+  </url>
+
+  <url>
+    <loc>https://www.nodostack.com/#servicios</loc>
+  </url>
+
+  <url>
+    <loc>https://www.nodostack.com/#proyectos</loc>
+  </url>
+
+  <url>
+    <loc>https://www.nodostack.com/#team</loc>
+  </url>
+
+  <url>
+    <loc>https://www.nodostack.com/#contacto</loc>
+  </url>
+
+</urlset>

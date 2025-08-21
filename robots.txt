@@ -1,0 +1,7 @@
+# Este archivo Permite que todos los robots indexen el sitio.
+#Indic dónde está el sitemap.xml.
+# reemplazar sitemap con el url real de la web
+
+User-agent: *
+Allow: /
+Sitemap: https://www.nodostack.com/sitemap.xml 
