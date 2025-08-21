@@ -14,9 +14,11 @@ idiomaToggle.addEventListener('click', () => {
     // ✅ HERO
     document.querySelector('.hero-text h1').textContent = 'Where technology becomes real solutions.';
 
-    // ✅ CTA
-    document.querySelector('.btn.btn-success').textContent = '📩 Free consultation';
-
+    // ✅ CTA WhatsApp
+    const ctaWhatsApp = document.querySelector('.btn-cta');
+    if (ctaWhatsApp) {
+      ctaWhatsApp.textContent = '📩 Chat on WhatsApp';
+    }
     // ✅ SOBRE NOSOTRAS
     document.querySelector('#sobre h2').textContent = 'About Us';
     document.querySelector('#sobre p.lead').innerHTML = `
@@ -101,14 +103,12 @@ idiomaToggle.addEventListener('click', () => {
     document.querySelector('#contacto label[for="mensaje"]').textContent = 'Message';
     document.querySelector('#contacto textarea#mensaje').placeholder = 'Tell us how we can help you';
     document.querySelector('#contacto button[type="submit"]').textContent = 'Send message';
-    document.querySelector('#contacto .text-center.mt-4 p').textContent = 'Prefer to chat directly?';
-    document.querySelector('#contacto .btn-outline-light').innerHTML = `<i class="fab fa-whatsapp me-2"></i> Chat on WhatsApp`;
-
+  
     // ✅ FOOTER
     document.querySelector('footer p').textContent = 'NodoStack © 2025 – Where code connects';
 
     // ✅ Toggle texto del botón
-    idiomaToggle.textContent = '🇪🇸 Español';
+  
     idiomaActual = 'en';
 
   } else {
