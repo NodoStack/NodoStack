@@ -4,4 +4,4 @@
 
 User-agent: *
 Allow: /
-Sitemap: https://www.nodostack.com/sitemap.xml 
+Sitemap: https://nodostack.netlify.app/sitemap.xml 
