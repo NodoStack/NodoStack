@@ -3,28 +3,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.nodostack.com/</loc>
+    <loc>https://nodostack.netlify.app/</loc>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.nodostack.com/#sobre</loc>
+    <lochttps://nodostack.netlify.app/#sobre</loc>
   </url>
 
   <url>
-    <loc>https://www.nodostack.com/#servicios</loc>
+    <loc>https://nodostack.netlify.app/#servicios</loc>
   </url>
 
   <url>
-    <loc>https://www.nodostack.com/#proyectos</loc>
+    <loc>https://nodostack.netlify.app/#proyectos</loc>
   </url>
 
   <url>
-    <loc>https://www.nodostack.com/#team</loc>
+    <loc>https://nodostack.netlify.app/#team</loc>
   </url>
 
   <url>
-    <loc>https://www.nodostack.com/#contacto</loc>
+    <loc>https://nodostack.netlify.app/#contacto</loc>
   </url>
 
 </urlset>
