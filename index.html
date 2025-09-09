@@ -56,16 +56,44 @@
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nosotras</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resolvemos">¿Qué resolvemos?</a></li>
         <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
         <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
         <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>  
         <!-- 🔀 Botón de idioma ubicado en el navbar -->
         <li class="nav-item d-flex align-items-center ms-3">
-          <button id="idioma-toggle" class="btn btn-sm btn-outline-light" title="Cambiar idioma">
-            <i class="fas fa-globe"></i>
-          </button>
-        </li>
+  <div class="dropdown">
+    <!-- Idioma activo: Español -->
+    <button class="btn btn-sm btn-outline-light dropdown-toggle d-flex align-items-center" type="button" id="idiomaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="./img/es.png" alt="Español" width="20" height="15" class="me-2">
+      <span>ES</span>
+    </button>
+
+    <!-- Opciones de idiomas -->
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="idiomaDropdown">
+    <li>
+    <a class="dropdown-item d-flex align-items-center" href="#" data-lang="es">
+      <img src="./img/es.png" alt="Español" width="20" height="15" class="me-2">
+      ES
+    </a>
+  </li>
+  <li>
+        <a class="dropdown-item d-flex align-items-center" href="#" data-lang="it">
+          <img src="./img/it.png" alt="Italiano" width="20" height="15" class="me-2">
+          IT
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item d-flex align-items-center" href="#" data-lang="en">
+          <img src="./img/gb.png" alt="Inglés" width="20" height="15" class="me-2">
+          EN
+        </a>
+      </li>
+    </ul>
+  </div>
+</li>
+
       </ul>
     </div>
   </div>
@@ -89,20 +117,28 @@
 <section id="sobre" class="py-5">
   <div class="container text-center">
     <h2 class="display-5 text-acento mb-4">Sobre Nosotras</h2>
+    
     <p class="lead mx-auto" style="max-width: 700px;">
       En <strong>NodoStack</strong> somos un equipo de desarrolladoras apasionadas por transformar ideas en soluciones reales.
       Nacimos con una visión clara: usar la tecnología para <strong>acompañar, crear y generar impacto positivo</strong> en cada etapa de tu proyecto.
     </p>
-    <ul class="list-unstyled mx-auto" style="max-width: 700px;">
-      <li> Creatividad y colaboración en cada entrega</li>
-      <li> Soluciones a medida para cada desafío</li>
-      <li> Experiencias digitales que dejan huella</li>
+
+    <!-- Lista centrada y más legible -->
+    <ul class="mx-auto text-center fs-5" 
+    style="max-width: 700px; list-style: disc inside; display: inline-block; text-align: left;">
+      <li class="mb-2">Creatividad y colaboración en cada entrega</li>
+      <li class="mb-2">Soluciones a medida para cada desafío</li>
+      <li>Experiencias digitales que dejan huella</li>
     </ul>
-    <p class="fw-bold text-acento">No solo programamos, construimos historias digitales. ¡Listas para crear la tuya!</p>
+
+    <p class="fw-bold text-acento fs-5 mt-4">
+      No solo programamos, construimos historias digitales. ¡Listas para crear la tuya!
+    </p>
   </div>
 </section>
+
   <!-- ✅ QUÉ RESOLVEMOS -->
-<section class="py-5 bg-accento fondo-negro text-light">
+<section id="resolvemos" class="py-5 bg-accento fondo-negro text-light">
   <div class="container">
     <h2 class="text-center mb-4">¿Qué resolvemos?</h2>
     <div class="row text-center g-4">
@@ -143,7 +179,7 @@
         </div>
       </div>
     </div>
-    <p class="text-center mt-4 fst-italic">Cada proyecto es único. Lo resolvemos como tal.</p>
+    <p class="text-center mt-4 fst-italic">Cada proyecto es único y lo resolvemos como tal.</p>
   </div>
 </section>
 
@@ -207,6 +243,21 @@
       <div class="col-md-6">
         <div class="card bg-uniforme text-light border-0 shadow-lg h-100">
           <div class="card-body p-4">
+            <h4 class="text-success mb-3">¿Necesitás una página que genere clientes reales?</h4>
+            <p>Diseñamos páginas de aterrizaje enfocadas en captar clientes y generar resultados medibles para tu negocio.</p>
+            <ul class="small">
+              <li>Diseño atractivo y 100% adaptable a cualquier dispositivo</li>
+              <li>Optimizada para SEO y velocidad de carga</li>
+              <li>Integración con formularios de contacto</li>
+              <li>Enfocada en convertir visitas en ventas reales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card bg-uniforme text-light border-0 shadow-lg h-100">
+          <div class="card-body p-4">
             <h4 class="text-success mb-3">¿Querés vender online?</h4>
             <p>Desarrollamos una app (web + móvil) donde los clientes compran fácilmente y vos controlás todo desde tu panel.</p>
             <ul class="small">
@@ -219,7 +270,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 mx-auto">
         <div class="card bg-uniforme text-light border-0 shadow-lg h-100">
           <div class="card-body p-4">
             <h4 class="text-success mb-3">¿Recibís muchas consultas repetidas?</h4>
@@ -248,17 +299,17 @@
 <!-- Micaela Juarez -->
       <div class="col-xl-3 col-md-4 col-sm-6 mb-5 px-3">
         <div class="card card-dev-custom h-100 text-center p-4">
-          <img src="./img/micaela.png" alt="Micaela Juarez" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="100" />
+          <img src="./img/mica1.jpg" alt="Micaela Juarez" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="140" />
           <div class="card-body">
             <h3 class="card-title text-menta">Micaela Juarez</h3>
             <p class="card-text">Developer Team</p>
             <div class="d-flex justify-content-center gap-2 mt-3">
-              <a href="https://www.linkedin.com/in/micaela-juarez-manescotto/" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Micaela Juarez">
+              <!-- <a href="https://www.linkedin.com/in/micaela-juarez-manescotto/" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Micaela Juarez">
                 <i class="fa-brands fa-linkedin"></i>
               </a>
               <a href="https://github.com/MicaelaJ26" target="_blank" class="social-link" aria-label="Perfil de GitHub de Micaela Juarez">
                 <i class="fa-brands fa-github"></i>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -266,17 +317,17 @@
       <!-- Mariana Cos -->
       <div class="col-xl-3 col-md-4 col-sm-6 mb-5 px-3">
         <div class="card card-dev-custom h-100 text-center p-4">
-          <img src="./img/mariana.png" alt="Mariana Cos" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="100" />
+          <img src="./img/mariana.png" alt="Mariana Cos" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="140" />
           <div class="card-body">
             <h3 class="card-title text-menta">Mariana Cos</h3>
             <p class="card-text">Developer Team</p>
             <div class="d-flex justify-content-center gap-2 mt-3">
-              <a href="https://www.linkedin.com/in/mariana-cos-b4a9a554" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Mariana Cos">
+              <!-- <a href="https://www.linkedin.com/in/mariana-cos-b4a9a554" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Mariana Cos">
                 <i class="fa-brands fa-linkedin"></i>
               </a>
               <a href="https://github.com/cosmariana?tab=repositories" target="_blank" class="social-link" aria-label="Perfil de GitHub de Mariana Cos">
                 <i class="fa-brands fa-github"></i>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -284,17 +335,17 @@
       <!-- Carla Arévalo -->
       <div class="col-xl-3 col-md-4 col-sm-6 mb-5 px-3">
         <div class="card card-dev-custom h-100 text-center p-4">
-          <img src="./img/carla.png" alt="Carla Arévalo" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="100" />
+          <img src="./img/carla.png" alt="Carla Arévalo" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="140" />
           <div class="card-body">
             <h3 class="card-title text-menta">Carla Arévalo</h3>
             <p class="card-text">Developer Team</p>
             <div class="d-flex justify-content-center gap-2 mt-3">
-              <a href="https://www.linkedin.com/in/carla-elizabeth-ar%C3%A9valo-a48845374/" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Carla Arévalo">
+              <!-- <a href="https://www.linkedin.com/in/carla-elizabeth-ar%C3%A9valo-a48845374/" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Carla Arévalo">
                 <i class="fa-brands fa-linkedin"></i>
               </a>
               <a href="https://github.com/CarlaArevalo" target="_blank" class="social-link" aria-label="Perfil de GitHub de Carla Arévalo">
                 <i class="fa-brands fa-github"></i>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
