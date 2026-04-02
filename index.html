@@ -45,352 +45,239 @@
 </head>
 <body> 
 
-  <!-- ✅ NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-uniforme fixed-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">NodoStack</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-uniforme fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">NodoStack</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nosotras</a></li>
-        <li class="nav-item"><a class="nav-link" href="#resolvemos">¿Qué resolvemos?</a></li>
-        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>  
-        <!-- 🔀 Botón de idioma ubicado en el navbar -->
-        <li class="nav-item d-flex align-items-center ms-3">
-  <div class="dropdown">
-    <!-- Idioma activo: Español -->
-    <button class="btn btn-sm btn-outline-light dropdown-toggle d-flex align-items-center" type="button" id="idiomaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="./img/es.png" alt="Español" width="20" height="15" class="me-2">
-      <span>ES</span>
-    </button>
-
-    <!-- Opciones de idiomas -->
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="idiomaDropdown">
-    <li>
-    <a class="dropdown-item d-flex align-items-center" href="#" data-lang="es">
-      <img src="./img/es.png" alt="Español" width="20" height="15" class="me-2">
-      ES
-    </a>
-  </li>
-  <li>
-        <a class="dropdown-item d-flex align-items-center" href="#" data-lang="it">
-          <img src="./img/it.png" alt="Italiano" width="20" height="15" class="me-2">
-          IT
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item d-flex align-items-center" href="#" data-lang="en">
-          <img src="./img/gb.png" alt="Inglés" width="20" height="15" class="me-2">
-          EN
-        </a>
-      </li>
-    </ul>
-  </div>
-</li>
-
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#resolvemos">Propuesta</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <!--<li class="nav-item"><a class="nav-link" href="#proyectos">Soluciones</a></li>-->
+          <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>  
+          
+          <li class="nav-item d-flex align-items-center ms-lg-3">
+            <div class="dropdown">
+              <button class="btn btn-sm btn-outline-light dropdown-toggle d-flex align-items-center" type="button" id="idiomaDropdown" data-bs-toggle="dropdown">
+                <img src="./img/es.png" alt="ES" width="20" height="15" class="me-2">
+                <span>ES</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end shadow">
+                <li><a class="dropdown-item d-flex align-items-center" href="#" data-lang="es"><img src="./img/es.png" width="20" class="me-2"> ES</a></li>
+                <li><a class="dropdown-item d-flex align-items-center" href="#" data-lang="it"><img src="./img/it.png" width="20" class="me-2"> IT</a></li>
+                <li><a class="dropdown-item d-flex align-items-center" href="#" data-lang="en"><img src="./img/gb.png" width="20" class="me-2"> EN</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <!-- ✅ HERO -->
-<header class="hero">
-  <div class="hero-content">
-    <img src="./img/logo sin fondo.png" alt="NodoStack Logo" class="hero-logo" />
-    <div class="hero-text">
-      <h1>Donde la tecnología se convierte en soluciones reales.</h1>
-      <!-- <button id="idioma-toggle" class="btn-menta">🇬🇧 English</button> -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="./img/logo sin fondo.png" alt="NodoStack Logo" class="hero-logo" />
+      <div class="hero-text">
+        <h1>Donde la tecnología se convierte en soluciones reales.</h1>
+      </div>
     </div>
-  </div>
-</header>
-  <!-- ✅ CTA Fijo Flotante -->
-  <a href="https://wa.me/5493517532082" class=" btn-cta position-fixed bottom-0 end-0 m-4 shadow rounded-pill px-4 py-2 z-3">
-    📩 Escribí por WhatsApp
+  </header>
+
+  <a href="https://wa.me/5493517532082" class="btn-cta position-fixed bottom-0 end-0 m-4 shadow rounded-pill px-4 py-2 z-3 text-decoration-none" aria-label="Contactar a NodoStack por WhatsApp" title="Escribinos por WhatsApp">
+    <span aria-hidden="true">📩</span> Escribí por WhatsApp
   </a>
-<!-- ✅ SOBRE NOSOTRAS -->
-<section id="sobre" class="py-5">
-  <div class="container text-center">
-    <h2 class="display-5 text-acento mb-4">Sobre Nosotras</h2>
-    
-    <p class="lead mx-auto" style="max-width: 700px;">
-      En <strong>NodoStack</strong> somos un equipo de desarrolladoras apasionadas por transformar ideas en soluciones reales.
-      Nacimos con una visión clara: usar la tecnología para <strong>acompañar, crear y generar impacto positivo</strong> en cada etapa de tu proyecto.
-    </p>
 
-    <!-- Lista centrada y más legible -->
-    <ul class="mx-auto text-center fs-5" 
-    style="max-width: 700px; list-style: disc inside; display: inline-block; text-align: left;">
-      <li class="mb-2">Creatividad y colaboración en cada entrega</li>
-      <li class="mb-2">Soluciones a medida para cada desafío</li>
-      <li>Experiencias digitales que dejan huella</li>
-    </ul>
-
-    <p class="fw-bold text-acento fs-5 mt-4">
-      No solo programamos, construimos historias digitales. ¡Listas para crear la tuya!
-    </p>
-  </div>
-</section>
-
-  <!-- ✅ QUÉ RESOLVEMOS -->
-<section id="resolvemos" class="py-5 bg-accento fondo-negro text-light">
-  <div class="container">
-    <h2 class="text-center mb-4">¿Qué resolvemos?</h2>
-    <div class="row text-center g-4">
-      <div class="col-md-3">
-        <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between">
-          <div>
-            <i class="fa-solid fa-handshake-angle fa-2x mb-3"></i>
-            <h5>Necesidad de acompañamiento técnico</h5>
-          </div>
-          <p>Ya sea con entregas puntuales o soporte continuo, trabajamos como tu equipo tecnológico aliado.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between">
-          <div>
-            <i class="fa-solid fa-plug fa-2x mb-3"></i>
-            <h5>Desconexión tecnológica</h5>
-          </div>
-          <p>Te ayudamos a incorporar herramientas digitales que potencien tu negocio, sin complicaciones.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between">
-          <div>
-            <i class="fa-solid fa-gears fa-2x mb-3"></i>
-            <h5>Procesos que necesitan optimización</h5>
-          </div>
-          <p>Automatizamos tareas y digitalizamos flujos para que tu tiempo rinda más.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between">
-          <div>
-            <i class="fa-solid fa-cube fa-2x mb-3"></i>
-            <h5>Soluciones a medida</h5>
-          </div>
-          <p>Desarrollamos plataformas adaptadas 100% a tus necesidades.</p>
-        </div>
-      </div>
-    </div>
-    <p class="text-center mt-4 fst-italic">Cada proyecto es único y lo resolvemos como tal.</p>
-  </div>
-</section>
-
-  <!-- ✅ SERVICIOS -->
-<section id="servicios" class="py-5 bg-uniforme text-white">
-  <div class="container">
-    <h2 class="text-center mb-5 fw-bold">Nuestros Servicios</h2>
-    <div class="row text-center">
+  <section id="resolvemos" class="py-5 bg-accento fondo-negro text-light">
+    <div class="container py-4">
+      <h2 class="text-center mb-5 display-5 text-menta">Tecnología que potencia tu negocio</h2>
       
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="p-4 border rounded h-100 shadow-sm">
-          <div class="mb-3 text-primary fs-2">
-            <i class="fas fa-laptop-code"></i>
+      <p class="text-center lead mx-auto mb-5" style="max-width: 800px;">
+        Acompañamos a emprendedores y empresas a digitalizar sus procesos con soluciones eficientes, escalables y humanas.
+      </p>
+
+      <div class="row text-center g-4">
+        <div class="col-md-3">
+          <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between p-3">
+            <div>
+              <i class="fa-solid fa-handshake-angle fa-2x mb-3 text-menta"></i>
+              <h5 class="fw-bold">Acompañamiento Técnico</h5>
+            </div>
+            <p class="small">Te acompañamos con soporte continuo para que no camines solo/a en el mundo digital.</p>
           </div>
-          <h5 class="fw-semibold">Desarrollo Web & Mobile</h5>
-          <p class="text-white">Construimos sitios y aplicaciones modernas, adaptadas a tus objetivos y preparadas para escalar.</p>
+        </div>
+        <div class="col-md-3">
+          <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between p-3">
+            <div>
+              <i class="fa-solid fa-plug fa-2x mb-3 text-menta"></i>
+              <h5 class="fw-bold">Integración Digital</h5>
+            </div>
+            <p class="small">Conectamos tu negocio con las herramientas tecnológicas que hoy el mercado exige.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between p-3">
+            <div>
+              <i class="fa-solid fa-gears fa-2x mb-3 text-menta"></i>
+              <h5 class="fw-bold">Optimización</h5>
+            </div>
+            <p class="small">Automatizamos tus tareas repetitivas para que tu tiempo rinda donde más importa.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card-dev-custom h-100 d-flex flex-column justify-content-between p-3">
+            <div>
+              <i class="fa-solid fa-cube fa-2x mb-3 text-menta"></i>
+              <h5 class="fw-bold">Apps a Medida</h5>
+            </div>
+            <p class="small">Desarrollamos plataformas únicas adaptadas 100% a las necesidades de tu negocio.</p>
+          </div>
         </div>
       </div>
-
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="p-4 border rounded h-100 shadow-sm">
-          <div class="mb-3 text-danger fs-2">
-            <i class="fas fa-object-group"></i>
-          </div>
-          <h5 class="fw-semibold">Diseño UX/UI</h5>
-          <p class="text-white">Creamos experiencias visuales claras, intuitivas y centradas en las personas que las usan.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="p-4 border rounded h-100 shadow-sm">
-          <div class="mb-3 text-success fs-2">
-            <i class="fas fa-handshake"></i>
-          </div>
-          <h5 class="fw-semibold">Consultoría técnica & acompañamiento</h5>
-          <p class="text-white">Te asesoramos desde el inicio hasta el lanzamiento, con la opción de seguir acompañándote con mantenimiento y soporte.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="p-4 border rounded h-100 shadow-sm">
-          <div class="mb-3 text-warning fs-2">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h5 class="fw-semibold">Testing y control de calidad</h5>
-          <p class="text-white">Probamos cada parte del producto para asegurar estabilidad, funcionalidad y buena experiencia de uso.</p>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="proyectos" class="py-5 bg-uniforme text-white">
-  <div class="container">
-    <h2 class="display-5 text-menta text-center">Soluciones reales, resultados concretos</h2>
-    <p class="lead text-center mb-5">Creamos herramientas digitales simples, que resuelven problemas reales de tu negocio.</p>
-
-    <div class="row g-4">
-
-      <div class="col-md-6">
-        <div class="card bg-uniforme text-light border-0 shadow-lg h-100">
-          <div class="card-body p-4">
-            <h4 class="text-success mb-3">¿Necesitás una página que genere clientes reales?</h4>
-            <p>Diseñamos páginas de aterrizaje enfocadas en captar clientes y generar resultados medibles para tu negocio.</p>
-            <ul class="small">
-              <li>Diseño atractivo y 100% adaptable a cualquier dispositivo</li>
-              <li>Optimizada para SEO y velocidad de carga</li>
-              <li>Integración con formularios de contacto</li>
-              <li>Enfocada en convertir visitas en ventas reales</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card bg-uniforme text-light border-0 shadow-lg h-100">
-          <div class="card-body p-4">
-            <h4 class="text-success mb-3">¿Querés vender online?</h4>
-            <p>Desarrollamos una app (web + móvil) donde los clientes compran fácilmente y vos controlás todo desde tu panel.</p>
-            <ul class="small">
-              <li>Catálogo con productos y fotos</li>
-              <li>Pagos online y gestión de pedidos</li>
-              <li>Funciona desde celular o computadora</li>
-              <li>Todo a medida, sin plantillas genéricas</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 mx-auto">
-        <div class="card bg-uniforme text-light border-0 shadow-lg h-100">
-          <div class="card-body p-4">
-            <h4 class="text-success mb-3">¿Recibís muchas consultas repetidas?</h4>
-            <p>Implementamos un chatbot que responde automáticamente preguntas frecuentes de tus clientes o tu equipo.</p>
-            <ul class="small">
-              <li>Ahorra tiempo de atención</li>
-              <li>Disponible 24/7</li>
-              <li>Personalizado con tu tono de marca</li>
-              <li>Se integra con WhatsApp o tu web</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <!-- ✅ EQUIPO -->
-<section id="team" class="py-5 fondo-negro  text-light" >
-  <div class="container text-center mb-5" >
-    <h2 class="display-5 text-menta">Nuestro equipo</h2>
-  </div>
-  <div class="container">
-    <div class="row justify-content-center">
-<!-- Micaela Juarez -->
-      <div class="col-xl-3 col-md-4 col-sm-6 mb-5 px-3">
-        <div class="card card-dev-custom h-100 text-center p-4">
-          <img src="./img/mica1.jpg" alt="Micaela Juarez" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="140" />
-          <div class="card-body">
-            <h3 class="card-title text-menta">Micaela Juarez</h3>
-            <p class="card-text">Developer Team</p>
-            <div class="d-flex justify-content-center gap-2 mt-3">
-              <!-- <a href="https://www.linkedin.com/in/micaela-juarez-manescotto/" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Micaela Juarez">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/MicaelaJ26" target="_blank" class="social-link" aria-label="Perfil de GitHub de Micaela Juarez">
-                <i class="fa-brands fa-github"></i>
-              </a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Mariana Cos -->
-      <div class="col-xl-3 col-md-4 col-sm-6 mb-5 px-3">
-        <div class="card card-dev-custom h-100 text-center p-4">
-          <img src="./img/mariana.png" alt="Mariana Cos" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="140" />
-          <div class="card-body">
-            <h3 class="card-title text-menta">Mariana Cos</h3>
-            <p class="card-text">Developer Team</p>
-            <div class="d-flex justify-content-center gap-2 mt-3">
-              <!-- <a href="https://www.linkedin.com/in/mariana-cos-b4a9a554" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Mariana Cos">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/cosmariana?tab=repositories" target="_blank" class="social-link" aria-label="Perfil de GitHub de Mariana Cos">
-                <i class="fa-brands fa-github"></i>
-              </a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Carla Arévalo -->
-      <div class="col-xl-3 col-md-4 col-sm-6 mb-5 px-3">
-        <div class="card card-dev-custom h-100 text-center p-4">
-          <img src="./img/carla.png" alt="Carla Arévalo" class="card-img-top rounded-circle mx-auto border border-menta shadow-sm" width="140" />
-          <div class="card-body">
-            <h3 class="card-title text-menta">Carla Arévalo</h3>
-            <p class="card-text">Developer Team</p>
-            <div class="d-flex justify-content-center gap-2 mt-3">
-              <!-- <a href="https://www.linkedin.com/in/carla-elizabeth-ar%C3%A9valo-a48845374/" target="_blank" class="social-link" aria-label="Perfil de LinkedIn de Carla Arévalo">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/CarlaArevalo" target="_blank" class="social-link" aria-label="Perfil de GitHub de Carla Arévalo">
-                <i class="fa-brands fa-github"></i>
-              </a> -->
-            </div>
-          </div>
-        </div>
-      </div>
+  <section id="servicios" class="py-5 bg-uniforme text-white">
+    <div class="container py-4">
+      <h2 class="text-center mb-5 fw-bold display-5 text-menta">Nuestros Servicios</h2>
       
+      <div class="row g-4">
+        
+        <div class="col-lg-8">
+          <div class="card card-dev-custom h-100 p-4 shadow-lg border-secondary">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-laptop-code fs-1 text-primary me-3"></i>
+              <h3 class="fw-bold mb-0">Desarrollo Web & Mobile</h3>
+            </div>
+            <p class="lead">Construimos productos digitales a medida, enfocados en resultados concretos para tu negocio:</p>
+            
+            <div class="row g-3 mt-2">
+              <div class="col-md-4">
+                <div class="p-3 bg-gris-oscuro rounded border border-secondary h-100">
+                  <h6 class="text-success fw-bold"><i class="fa-solid fa-bolt me-2"></i>Landing Pages</h6>
+                  <p class="small mb-0">Efectividad máxima para captar clientes y vender un producto específico.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 bg-gris-oscuro rounded border border-secondary h-100">
+                  <h6 class="text-success fw-bold"><i class="fa-solid fa-cart-shopping me-2"></i>E-Commerce</h6>
+                  <p class="small mb-0">Tiendas online completas con gestión de pagos y catálogo personalizado.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 bg-gris-oscuro rounded border border-secondary h-100">
+                  <h6 class="text-success fw-bold"><i class="fa-solid fa-robot me-2"></i>Chatbots & AI</h6>
+                  <p class="small mb-0">Automatización de consultas para atención 24/7 sin esfuerzo manual.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="row g-4">
+            <div class="col-12">
+              <div class="card card-dev-custom p-3 border-secondary shadow-sm">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-object-group fs-3 text-danger me-3"></i>
+                  <div>
+                    <h5 class="fw-semibold mb-1">Diseño UX/UI</h5>
+                    <p class="small mb-0">Interfaces pensadas para que usar tu web sea un placer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card card-dev-custom p-3 border-secondary shadow-sm">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-handshake fs-3 text-success me-3"></i>
+                  <div>
+                    <h5 class="fw-semibold mb-1">Consultoría</h5>
+                    <p class="small mb-0">Te guiamos para elegir la mejor tecnología.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card card-dev-custom p-3 border-secondary shadow-sm">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-shield-alt fs-3 text-warning me-3"></i>
+                  <div>
+                    <h5 class="fw-semibold mb-1">Testing y QA</h5>
+                    <p class="small mb-0">Garantía de que todo funciona perfecto antes de lanzar.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- ✅ CONTACTO -->
-  <section id="contacto" class="py-5 bg-accento text-light">
-  <div class="container">
-    <h2 class="text-center mb-4 display-6 text-menta">Contacto</h2>
-    <p class="text-center mb-4">¿Tenés una idea, un proyecto o una consulta? Escribinos, te respondemos en menos de 24 hs.</p>
-    <form action="https://formspree.io/f/xdkdqqrw" method="POST" class="mx-auto bg-gris-oscuro p-4 rounded shadow contact-form" style="max-width: 600px;">
-      <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre completo" required />
+  <section id="team" class="py-5 fondo-negro text-light">
+    <div class="container text-center mb-5">
+      <h2 class="display-5 text-menta">Nuestro equipo</h2>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4 col-sm-6">
+          <div class="card card-dev-custom h-100 text-center p-4">
+            <img src="./img/mica1.jpg" alt="Retrato de Micaela Juarez, Desarrolladora de NodoStack" class="rounded-circle mx-auto border border-menta mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
+            <h5 class="text-menta">Micaela Juarez</h5>
+            <p class="small mb-0">Developer Team</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card card-dev-custom h-100 text-center p-4">
+            <img src="./img/mariana.png" alt="Retrato de Mariana Cos, Desarrolladora de NodoStack" class="rounded-circle mx-auto border border-menta mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
+            <h5 class="text-menta">Mariana Cos</h5>
+            <p class="small mb-0">Developer Team</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card card-dev-custom h-100 text-center p-4">
+            <img src="./img/carla.png" alt="Retrato de Carla Arévalo, Desarrolladora de NodoStack" class="rounded-circle mx-auto border border-menta mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
+            <h5 class="text-menta">Carla Arévalo</h5>
+            <p class="small mb-0">Developer Team</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="mb-3">
-        <label for="email" class="form-label">Correo electrónico</label>
-        <input type="email" id="email" name="email" class="form-control" placeholder="tu@email.com" required />
-      </div>
+  <section id="contacto" class="py-5 bg-accento fondo-negro text-light">
+    <div class="container">
+      <h2 class="text-center mb-4 display-6 text-menta">Contacto</h2>
+      <p class="text-center mb-5">¿Tenés una idea o proyecto? Te respondemos en menos de 24 hs.</p>
+      <form action="https://formspree.io/f/xdkdqqrw" method="POST" class="mx-auto bg-gris-oscuro p-4 rounded shadow contact-form" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="nombre" class="form-label small">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej: Maria Perez" required />
+        </div>
+        <div class="mb-3">
+          <label for= "email" class="form-label small">Email</label>
+          <input type="email" id= "email" name="email" class="form-control" placeholder="tu@email.com" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label small">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" class="form-control" rows="4" placeholder="Contanos tu idea..." required></textarea>
+        </div>
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-menta px-5" aria-label="Enviar formulario de contacto">Enviar mensaje</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
-      <div class="mb-3">
-        <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" class="form-control" rows="5" placeholder="Contanos en qué te podemos ayudar" required></textarea>
-      </div>
-
-      <div class="text-center mt-4">
-        <button type="submit" class="btn btn-menta px-4">Enviar mensaje</button>
-      </div>
-    </form>
-
-    
-</section>
-
-  <!-- ✅ FOOTER -->
-  <footer class="footer bg-dark text-light text-center py-3">
-    <p class="mb-0">NodoStack © 2025 – Donde el código conecta</p>
+  <footer class="footer bg-dark text-light text-center py-3 border-top border-secondary">
+    <p class="mb-0 small">NodoStack © 2025 – Donde el código conecta</p>
   </footer>
 
-  <!-- Bootstrap Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="main.js"></script>
 </body>
-</html>
