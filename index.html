@@ -56,7 +56,7 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
           <li class="nav-item"><a class="nav-link" href="#resolvemos">Propuesta</a></li>
           <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">Soluciones</a></li>
+          <!--<li class="nav-item"><a class="nav-link" href="#proyectos">Soluciones</a></li>-->
           <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>  
           
@@ -87,8 +87,8 @@
     </div>
   </header>
 
-  <a href="https://wa.me/5493517532082" class="btn-cta position-fixed bottom-0 end-0 m-4 shadow rounded-pill px-4 py-2 z-3 text-decoration-none">
-    📩 Escribí por WhatsApp
+  <a href="https://wa.me/5493517532082" class="btn-cta position-fixed bottom-0 end-0 m-4 shadow rounded-pill px-4 py-2 z-3 text-decoration-none" aria-label="Contactar a NodoStack por WhatsApp" title="Escribinos por WhatsApp">
+    <span aria-hidden="true">📩</span> Escribí por WhatsApp
   </a>
 
   <section id="resolvemos" class="py-5 bg-accento fondo-negro text-light">
@@ -227,21 +227,21 @@
       <div class="row justify-content-center g-4">
         <div class="col-md-4 col-sm-6">
           <div class="card card-dev-custom h-100 text-center p-4">
-            <img src="./img/mica1.jpg" alt="Micaela Juarez" class="rounded-circle mx-auto border border-menta mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
+            <img src="./img/mica1.jpg" alt="Retrato de Micaela Juarez, Desarrolladora de NodoStack" class="rounded-circle mx-auto border border-menta mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
             <h5 class="text-menta">Micaela Juarez</h5>
             <p class="small mb-0">Developer Team</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="card card-dev-custom h-100 text-center p-4">
-            <img src="./img/mariana.png" alt="Mariana Cos" class="rounded-circle mx-auto border border-menta mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
+            <img src="./img/mariana.png" alt="Retrato de Mariana Cos, Desarrolladora de NodoStack" class="rounded-circle mx-auto border border-menta mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
             <h5 class="text-menta">Mariana Cos</h5>
             <p class="small mb-0">Developer Team</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="card card-dev-custom h-100 text-center p-4">
-            <img src="./img/carla.png" alt="Carla Arévalo" class="rounded-circle mx-auto border border-menta mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
+            <img src="./img/carla.png" alt="Retrato de Carla Arévalo, Desarrolladora de NodoStack" class="rounded-circle mx-auto border border-menta mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
             <h5 class="text-menta">Carla Arévalo</h5>
             <p class="small mb-0">Developer Team</p>
           </div>
@@ -256,19 +256,19 @@
       <p class="text-center mb-5">¿Tenés una idea o proyecto? Te respondemos en menos de 24 hs.</p>
       <form action="https://formspree.io/f/xdkdqqrw" method="POST" class="mx-auto bg-gris-oscuro p-4 rounded shadow contact-form" style="max-width: 600px;">
         <div class="mb-3">
-          <label class="form-label small">Nombre completo</label>
-          <input type="text" name="nombre" class="form-control" placeholder="Ej: Maria Perez" required />
+          <label for="nombre" class="form-label small">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej: Maria Perez" required />
         </div>
         <div class="mb-3">
-          <label class="form-label small">Email</label>
-          <input type="email" name="email" class="form-control" placeholder="tu@email.com" required />
+          <label for= "email" class="form-label small">Email</label>
+          <input type="email" id= "email" name="email" class="form-control" placeholder="tu@email.com" required />
         </div>
         <div class="mb-3">
-          <label class="form-label small">Mensaje</label>
-          <textarea name="mensaje" class="form-control" rows="4" placeholder="Contanos tu idea..." required></textarea>
+          <label for="mensaje" class="form-label small">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" class="form-control" rows="4" placeholder="Contanos tu idea..." required></textarea>
         </div>
         <div class="text-center mt-4">
-          <button type="submit" class="btn btn-menta px-5">Enviar mensaje</button>
+          <button type="submit" class="btn btn-menta px-5" aria-label="Enviar formulario de contacto">Enviar mensaje</button>
         </div>
       </form>
     </div>

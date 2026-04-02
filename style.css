@@ -23,6 +23,7 @@ html {
 
 body {
   font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
   background: linear-gradient(to bottom, #2c2c2c, #1d1f21);
   color: var(--blanco-suave);
   line-height: 1.6;
@@ -31,29 +32,42 @@ body {
 /* --- NAVBAR --- */
 .navbar {
   background-color: var(--gris-oscuro);
-  padding: 0.8rem 1.5rem;
+  padding: 1.5rem 2rem !important; /* Forzamos un poco más de altura */
   box-shadow: var(--sombra-suave);
 }
 
 .navbar-brand {
   color: var(--verde-menta);
   font-weight: 700;
+  font-size: 2rem !important; /* NodoStack más grande */
   letter-spacing: 1px;
-  transition: var(--transicion);
-}
-
-.navbar-brand:hover {
-  color: var(--verde-profundo);
+  margin-right: 0; /* Quitamos márgenes que lo empujen */
 }
 
 .nav-link {
   color: var(--blanco-suave);
+  font-size: 1.3rem !important; /* Letra del menú más legible */
+  margin-left: 2rem;/* Más separación */
+  font-weight: 600; /* Un poquito más de grosor */
   transition: var(--transicion);
 }
+.navbar-brand:hover {
+  color: var(--verde-profundo);
+}
+
 
 .nav-link:hover {
   color: var(--verde-menta);
 }
+.navbar .container-fluid {
+  /* Esto obliga a los elementos a irse a las puntas */
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  max-width: 100% !important; /* Que use todo el ancho */
+  padding: 0 4rem; /* Espacio en los bordes para que no toquen el marco físico */
+}
+
 /* --- Dropdown idioma oscuro forzado --- */
 .navbar .dropdown-menu {
   background-color: #000 !important;
@@ -79,41 +93,53 @@ body {
 /* --- HERO SECTION --- */
 .hero {
   background-color: var(--negro);
-  padding: 4rem 2rem;
+  padding: 2rem 0 !important; /* Achico el alto del sector negro */
+  min-height: auto !important; /* Quitamos cualquier altura mínima rara */
   text-align: center;
-  animation: fadeInUp 1s ease forwards;
 }
 
 .hero-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  max-width: 1200px;
+  justify-content: space-between; /* Texto y logo a las puntas */
+  flex-wrap: wrap; /* Permite que se acomoden */
+  gap: 5rem; /* Mucho espacio entre logo y texto */
+  max-width: 1400px; /* Contenedor más ancho para que el logo crezca */
+  width: 95%;
   margin: 0 auto;
 }
 
 .hero-logo {
-  max-width: 450px;
-  width: 100%;
+  /* Subimos el tamaño para que se vea como en producción */
+  max-width: 600px !important; 
+  width: 90%;
   height: auto;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 4px 15px rgba(0,0,0,0.5));
 }
 
 .hero-text {
-  max-width: 500px;
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  /* Mantengo el tamaño que te gustó, solo ajusto el espaciado */
+  font-size: 2.8rem !important; 
   color: var(--verde-menta);
+  font-weight: 700;
+  line-height: 1.1;
+  
 }
 
-.hero-text p {
-  color: var(--blanco-suave);
-  opacity: 0.9;
+/* 📱 Ajuste para tablets y celus */
+@media (max-width: 991px) {
+  .hero-text {
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
 }
 
 /* Botón principal */
